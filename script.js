@@ -40,7 +40,7 @@ while(isRobotTurnOn) {
     
     
     
-    var isBatteryFull = numberOfAvailableHits > 0;
+    const isBatteryFull = numberOfAvailableHits > 0;
     
     if(!isBatteryFull) {
         alert("Свърши ми тока - отивам да зареждам");
@@ -83,22 +83,33 @@ while(isRobotTurnOn) {
 
 
      // задача 5:
-        // вар 1:
-        var upperBoundNumber = 10;
-        while(upperBoundNumber > 0 ); {
-            alert(upperBoundNumber);
-            if(upperBoundNumber % 2 == 0) {
-                alert(`I am a robottttt ${upperBoundNumber}`);
-            }
-            upperBoundNumber = upperBoundNumber - 1;
-        }
-
-
-
+             // Вар 1:
     if(isHitPossible) {
         alert("Успешно нанесохте удар");
-        numberOfAvailableHits = numberOfAvailableHits - 1;
+        // numberOfAvailableHits = numberOfAvailableHits - 1; // вариант 1
+        numberOfAvailableHits--; //вариант 2 на предходния ред
+    
+        // вар 2:
+        // var upperBoundNumber = 10;
+        // while(upperBoundNumber > 0 ); {
+        //     alert(upperBoundNumber);
+        //     if(upperBoundNumber % 2 == 0) {
+        //         alert(`I am a robottttt ${upperBoundNumber}`);
+        //     }
+        //     upperBoundNumber--;
+        // }
+
+        // Цикъл с брояч
+        for(var upperBound = 10; upperBound > 0; upperBound--) {
+
+            alert(upperBoundNumber);
+
+            if(upperBoundNumber % 2 == 0) {
+                alert(`I am a Robottttt ${upperBoundNumber}`);
+            }
+        }
     }
+
 }
 
 
