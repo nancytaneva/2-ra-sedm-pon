@@ -27,13 +27,13 @@ while(isRobotTurnOn) {
     }
     if(objectInFrontOfMe == 0) {
         alert("Robot turned off");
-        // isRobotTurnOn = false; - друг вариант за прекъсване на цикъла.
-        break; // бъде ли срещната, извежда кода на следващата линия непосредствено след затварящата скоба на цикъла, т. е. цикъла приключва.
+        isRobotTurnOn = false; // - друг вариант за прекъсване на цикъла.
+        // break; // бъде ли срещната, извежда кода на следващата линия непосредствено след затварящата скоба на цикъла, т. е. цикъла приключва.
     }
 
     // задача 2.1
     const numberOfEnvironmentPixels = prompt("Засечени пиксели от заобикалящия ни терен:");
-    const isMouseDetected = numberOfEnvironmentPixels%2 == 0;
+    const isMouseDetected = numberOfEnvironmentPixels % 2 == 0;
 
     //задача 2.2
     //  TODO - да не забравя да извадя направения удар от numberofAvailableHits!
