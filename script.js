@@ -90,7 +90,7 @@ while(isRobotTurnOn) {
         numberOfAvailableHits--; //вариант 2 на предходния ред
     
         // вар 2:
-        // var upperBoundNumber = 10;
+        //var upperBoundNumber = 10;
         // while(upperBoundNumber > 0 ); {
         //     alert(upperBoundNumber);
         //     if(upperBoundNumber % 2 == 0) {
@@ -102,10 +102,10 @@ while(isRobotTurnOn) {
         // Цикъл с брояч
         for(var upperBound = 10; upperBound > 0; upperBound--) {
 
-            alert(upperBoundNumber);
+            alert(upperBound);
 
-            if(upperBoundNumber % 2 == 0) {
-                alert(`I am a Robottttt ${upperBoundNumber}`);
+            if(upperBound % 2 == 0) {
+                alert(`I am a Robottttt ${upperBound}`);
             }
         }
     }
